@@ -1,0 +1,49 @@
+
+<!-- 
+
+North Leg of Intersection street name:
+[] check box if north south are the same
+East Leg of intersection street name:
+[] check box if east/west are the same.
+
+add a box if check box is checked.
+
+-->
+
+
+<form class="form-horizontal" role="form" ng-submit="createDevice()">
+    <div class="form-group">
+        <label for="title" class="col-sm-4 control-label">Add a Network Device</label>
+		 <div class="container">
+		   <div class="row">
+	        
+		         <div class="col-sm-6">
+		            <input type="text" class="form-control" id="agency" placeholder="Agency/City" ng-model="device.agency">
+		        </div>
+	        
+	        </div>
+	        <div class="row">
+	        
+		        <div class="col-sm-6">
+		            <input type="text" class="form-control" id="title" placeholder="Device Name" ng-model="device.title">
+		        </div>
+	       
+	        </div>
+	        <div class="row">
+	        
+		        <div class="col-sm-6">
+		            <input type="text" class="form-control" id="inet" placeholder="IP: 127.0.0.1" ng-model="device.inet">
+		        </div>
+	        
+	        </div>
+	        <div class="row">
+		        <div class="form-group">
+			        <div class="col-sm-6">
+			            <button type="submit" class="btn btn-default">Add Device</button>
+			        </div>
+		        
+		        </div>
+            </div>
+        </div>
+    </div>
+</form>

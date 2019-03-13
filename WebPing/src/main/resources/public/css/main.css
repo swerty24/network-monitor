@@ -1,0 +1,126 @@
+.success-true{
+    text-decoration: line-through;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Oswald);
+
+
+
+
+body {
+  font-family: "Open Sans", Arial;
+  background: #EDEDED;
+  padding: 50px 0;
+}
+main {
+	max-width: 1000px;
+	margin: 30px auto;
+	padding: 10px 40px 50px;
+  background: #FFF;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+#filter {
+	margin-bottom: 1em;
+}
+.pagination {
+	margin: 0 0 1em;
+}
+.table {
+	font-size: 0.9em;
+	table-layout: fixed;
+}
+th.sortable {
+	cursor: pointer;
+}
+th.sortable:hover {
+	background: #EEE;
+}
+.caret-blank {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+.caret-up {
+	border-bottom: 8px solid #333;
+}
+.caret-down {
+	border-top: 8px solid #333;
+}
+
+.status {
+    font-family: 'Source Sans Pro', sans-serif;
+    	
+}
+
+.panel-success > .panel-heading {
+    color: rgb(60, 118, 61);
+    background-color: rgb(223, 240, 216);
+    border-color: rgb(214, 233, 198);
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.panel-body {
+  color: #404c73;
+  background-color: #fff;
+  }
+  
+.panel-danger > .panel-heading {
+    color: rgb(169, 68, 66);
+    background-color: rgb(242, 222, 222);
+    border-color: rgb(235, 204, 209);
+}
+
+.panel-info > .panel-heading {
+    color: rgb(49, 112, 143);
+    background-color: rgb(217, 237, 247);
+    border-color: rgb(188, 232, 241);
+}
+
+
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+.panel-warning > .panel-heading {
+    color: rgb(138, 109, 59);
+    background-color: rgb(252, 248, 227);
+    border-color: rgb(250, 235, 204);
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+	}
+.status .panel-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 45px;
+    padding-top: 20px;
+    letter-spacing: -0.8px;
+}

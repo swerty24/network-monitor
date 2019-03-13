@@ -1,0 +1,91 @@
+<!-- 
+Convert to this type of chart: http://krispo.github.io/angular-nvd3/#/
+Create bar chart with occupancy for  (amount of pings in a day for a device)/(amount of pings their should have been based on ping frequency)
+
+http://plnkr.co/edit/Lxkt4eyjMavRIJ0p838R?p=preview   
+http://jtblin.github.io/angular-chart.js/
+
+http://krispo.github.io/angular-nvd3/#/
+
+https://docs.angularjs.org/api/ng/directive/select#examples
+ng-options="option.name for option in uniqueAgencys track by option.id"
+
+
+https://www.undefinednull.com/2014/08/11/a-brief-walk-through-of-the-ng-options-in-angularjs/
+
+-->
+
+
+
+
+
+
+ <!-- <tt>model = {{agency.id}}</tt><br/>  -->
+  
+
+	
+	 <form name="myForm">
+	    <label for="repeatSelect"> Device: </label>
+	    <select name="repeatSelect" id="repeatSelect" ng-model="agency" ng-options="item.title for item in agencyObject"  ng-change="selectedItemChanged({{item.id}})">
+	      <option value="{{agency.id+1}}" >{{agency}}</option>
+	    </select>
+	  </form>
+  </div>
+  
+ </div>
+ 
+
+
+
+ 
+   
+
+
+
+
+
+<table class="table table-hover table-condensed">
+    <tr>
+        <th style="width: 7.5%">
+            #
+        </th>
+        <th style="width: 15%">
+         
+            Agency
+        </th>
+        <th style="width: 15%"><center>
+         
+            Network Health
+        </center></th>
+    </tr>
+    
+     <tr ng-repeat="x in agencyObject | toArray | orderBy : 'name'" ng-class="{ 'table-success': (x.numConn)/(x.numD)>=.75}" > 
+        <td>{{$index+1}}</td>
+         <td>
+          {{x.name}}
+  
+        </td>
+         <td><center>
+            {{100*((x.numConn)/(x.numD))}}%
+        </center></td>
+        
+    </tr>
+</table>
+
+ <center><h5>Network Health </h35>
+  <div>
+	  <canvas id="line" class="chart chart-line" chart-data="line_data"
+	chart-labels="line_labels" chart-series="line_series" chart-options="line_options"
+	chart-dataset-override="datasetOverride" chart-click="onClick">
+	</canvas>
+	</center>
+	</div>
+	
+	 <center><h5>Network Stats </h35>
+	<div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+
+        
+ 
+        
+    
+
