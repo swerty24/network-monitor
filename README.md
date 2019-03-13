@@ -1,5 +1,5 @@
 # network-monitor
-Browser based network ping monitor built with SparkJava+MongoDB+Angular
+## Browser based network ping monitor built with SparkJava+MongoDB+Angular
 
 
 fire up MongoDB server.
